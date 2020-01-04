@@ -1,4 +1,5 @@
 # python fibonacci
+
 fibonacci = int(input("enter number for fibonacci: "))
 
 i=1 #index

@@ -1,2 +1,2 @@
-print('hello')
-print('Welcome to Telusko')
+# print('hello')
+# print('Welcome to Telusko')

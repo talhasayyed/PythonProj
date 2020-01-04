@@ -1,3 +1,4 @@
+# python program for number not divisible by 3 or 5
 for num in range(1,50):
     if not num % 3 == 0 or num % 5 == 0:
         

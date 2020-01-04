@@ -1,8 +1,10 @@
-
-for num in range(1,50):
-    if not num % 3 == 0 or num % 5 == 0:
-        #print("divisible by 3 or 5")
-        print(num)
-    else:
-        continue
-
+# break
+available = 20
+reqCandy = int(input("how much candy u want: "))
+i = 1
+while i <= reqCandy:
+    if i>available:
+        print("out of stock, we had only ", available,"candy")
+        break
+    print(i,"candy!")
+    i+=1

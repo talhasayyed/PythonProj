@@ -24,7 +24,6 @@ for line in lines:
 out = {}
 NotOut = {}
 
-
 for (key,values) in d.items():
     if values[-1]=="*":
         key_value = (key,values)
@@ -41,13 +40,3 @@ print("====================================================")
 print("NotOut dictionary")
 print(NotOut)
 print("------> max of not out is",key,max(NotOut.values()))
-
-
-
-
-
-
-
-
-
-

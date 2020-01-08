@@ -26,17 +26,26 @@ NotOut = {}
 
 for (key,values) in d.items():
     if values[-1]=="*":
+        values = int(values[:-1])
+        # print(int(values))
+
         key_value = (key,values)
         out.update({key:values})
     else:
+        values = int(values)
         NotOut.update({key:values})
 
-print("out dictionary")
-print(out)
-print("------> max of out is ",key,max(out.values()))
+print(d)
+
+print("out",out)
+
+for key,values in out.items():
+    if values == max(out.values()):
+        print("------> max ",key,values)
 
 print("====================================================")
 
-print("NotOut dictionary")
-print(NotOut)
-print("------> max of not out is",key,max(NotOut.values()))
+print("NotOut",NotOut)
+for key,values in NotOut.items():
+    if values == max(NotOut.values()):
+        print("------> max ",key,values)

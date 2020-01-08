@@ -37,6 +37,7 @@ for (key,values) in d.items():
 
 print(d)
 
+print("====================================================")
 print("out",out)
 
 for key,values in out.items():
@@ -44,7 +45,6 @@ for key,values in out.items():
         print("------> max ",key,values)
 
 print("====================================================")
-
 print("NotOut",NotOut)
 for key,values in NotOut.items():
     if values == max(NotOut.values()):

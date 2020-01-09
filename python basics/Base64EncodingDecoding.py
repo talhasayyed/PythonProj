@@ -4,6 +4,7 @@ import base64
 data = "abc123!?$*&()'-=@~"
 
 print("Actual String data is = ",data)
+
 # Standard Base64 Encoding
 encodedBytes = base64.b64encode(data.encode("utf-8"))
 encodedStr = str(encodedBytes, "utf-8")

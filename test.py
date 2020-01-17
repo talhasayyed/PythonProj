@@ -1,11 +1,16 @@
-# 41 fact using recursion
+# 52 type of variables in class(class variables & instance variables)
+class Car:
+    def __init__(self):
+        self.mod = 10
+        self.camp = 'bmw'
 
-def fact(n):
-    if n == 0:
-        return 1
-    return n * fact(n - 1)
+c1 = Car()
+c2 = Car()
 
+c1.mod = 8
+Car.wheel = 4
+print(c1.mod,c1.camp,c1.wheel)
+print()
 
-x = 5
-result = fact(x)
-print(result)
+print(c2.mod)
+print(c2.camp)

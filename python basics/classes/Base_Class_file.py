@@ -1,4 +1,4 @@
-
+# inheritace from diff files
 from Super_Class_file import Super_Class
 
 class Base_Class(Super_Class):

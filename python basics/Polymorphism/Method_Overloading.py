@@ -1,5 +1,5 @@
 
-# method Overloading is when same method overloaded by numbper of paramiters
+# method Overloading is when same method overloaded by number of paramiters
 
 class Student:
     def __init__(self,m1,m2):

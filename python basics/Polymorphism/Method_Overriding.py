@@ -1,4 +1,5 @@
 # Method Overriding
+# changing same name method in child class
 
 class A:
     def show(self):

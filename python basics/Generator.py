@@ -1,6 +1,6 @@
 # Generator using yield
-# when it is used
-# u r fetching 1000 records from DB but u want 1 value at atime
+# when it is used ?
+# u r fetching 1000 records from DB but u want 1 value at a time
 def topten():
     # This is not possible with return
     yield 1

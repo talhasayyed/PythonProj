@@ -1,15 +1,16 @@
 # linear search
 
-list = [1,2,3,4,5,6,7]
-
+#      [0][1]......[7]
+list = [1,7,3,8,5,6,9]
 n = 6
-
+position = -1
 def search(list,n):
     i = 0
 
 ###     using while loop
-    while i<=len(list):
+    while i<=len(list):     # [0][1]....[7]
         if list[i] == n:
+            globals() ['position'] = i
             return True
         i += 1
     return False
@@ -25,6 +26,6 @@ def search(list,n):
 
 
 if search(list,n):
-    print('fount',n)
+    print('fount',n,'at pos=',position)
 else:
     print('not found')

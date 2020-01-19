@@ -1,6 +1,6 @@
 # Iterator for memory management in loop
-# is used in conditon where u dont want to store all values in memory
-# just want one value in memory
+# is used in conditon
+# just want one value at a time
 
 
 class TopTen:

@@ -1,5 +1,4 @@
 # Generator using yield
-
 def topten():
     # This is not possible with return
     yield 1

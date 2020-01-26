@@ -15,25 +15,38 @@
 
 
 
-a=5
-b=2
 
 
 
+#!/bin/python3
 
+import os
+import sys
 
+#
+# Complete the simpleArraySum function below.
+#
+def simpleArraySum(ar):
+    #
+    # Write your code here.
+    sum=0
+    for e in ar:
+        sum = sum + e
+    print(sum)
+    #
 
-def cals(a,b):
-#     print(swap(a,b),'cals')
-    a,b=1,3
-    print(swap(a,b))
+if __name__ == '__main__':
+    fptr = open('abc', 'w')
 
-def swap(x,y):
-    x,y=y,x
-    return x,y
+    ar_count = int(input())
 
+    ar = list(map(int, input().rstrip().split()))
 
-cals(a,b)
+    result = simpleArraySum(ar)
+
+    fptr.write(str(result) + '\n')
+
+    fptr.close()
 
 
 

@@ -1,3 +1,5 @@
+# Alphabet Rangoli Hackerrank
+
 import string
 alpha = string.ascii_lowercase
 # a b c d e

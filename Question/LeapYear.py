@@ -1,19 +1,4 @@
-# class Pycharm:
-#     def execute(self):
-#         print('compile')
-#
-# class Laptop:
-#     def code(self,ide):
-#         ide.execute()
-#
-# ide = Pycharm()
-#
-# l1 = Laptop()
-# l1.execute(ide)
-
-
-
-
+# leap year hacker rank
 def leapyear(year):
     leap= False
     if year % 400 == 0:

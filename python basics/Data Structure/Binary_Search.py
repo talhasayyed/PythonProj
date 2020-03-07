@@ -1,4 +1,4 @@
-# linear search
+# binary search
 
 #      [0][1]......[7]
 list0 = [1,7,3,8,5,6,9]
@@ -8,20 +8,20 @@ pos = 0
 
 
 def search(list,n):
-    l = 0
-    u = len(list)-1
+    lowerLim = 0
+    upperLim = len(list)-1
 
 ###     using while loop
-    while l <= u:
-        mid = (l+u) // 2
+    while lowerLim <= upperLim:
+        mid = (lowerLim + upperLim) // 2
         if list[mid] == n:
             globals()['pos'] = mid
             return True
         else:
             if list[mid] < n:
-                l = mid
+                lowerLim = mid
             else:
-                u = mid
+                upperLim = mid
     return False
 
 

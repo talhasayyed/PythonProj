@@ -19,6 +19,5 @@ class TopTen:
             raise StopIteration
 
 Values = TopTen()
-
 for i in Values:
     print(i)

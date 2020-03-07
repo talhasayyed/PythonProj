@@ -1,28 +1,49 @@
-# class Pycharm:
-#     def execute(self):
-#         print('compile')
-#
-# class Laptop:
-#     def code(self,ide):
-#         ide.execute()
-#
-# ide = Pycharm()
-#
-# l1 = Laptop()
-# l1.execute(ide)
+# random word match dictionary
+
+
+import sys
+from itertools import permutations
+from PyDictionary import PyDictionary
 
 
 
 
-def leapyear(year):
-    leap= False
-    if year % 400 == 0:
-        leap = True
-    elif year % 100 != 0:
-        leap = False
-    elif year % 4 == 0:
-        leap = True
 
-    return leap
-yr = int(input('enter year: '))
-print(leapyear(yr))
+inputstr = 'fcuk'.upper()#input("enter ")#.upper() #sys.argv[1].upper()
+k = 4
+
+
+def word_combination(word_str,lenght):
+    if k <= len(inputstr):
+        lst_inp = list(inputstr)
+    
+        perms = (p for p in permutations(lst_inp,k))
+        # print(type(perms))
+
+        for p in perms:
+            word = ''.join(p)
+            print(word)
+
+    else:
+        print('u have inserted high number')
+
+word_combination(inputstr,k)
+
+
+
+# -----------Dict stuff
+
+# word = "fuck"
+# dictionary = PyDictionary(word)
+# meaning = dictionary.printMeanings()
+# print(f'word is {word} \nmeaning is {meaning}')
+
+
+
+
+
+
+
+
+
+

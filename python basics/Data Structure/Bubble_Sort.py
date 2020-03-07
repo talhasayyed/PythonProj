@@ -3,6 +3,7 @@
 
 list = [7,5,3,1,2,6,4,9,8]
 
+print(list)
 def BubbleSort(list):
     for i in range(len(list)-1,0,-1):
         for j in range(i):
@@ -11,4 +12,4 @@ def BubbleSort(list):
 
 
 BubbleSort(list)
-print(list)
+print(list,' sorted')

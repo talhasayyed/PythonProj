@@ -9,6 +9,6 @@ mycursor.execute("select * from Databasse_name")
 # result = mycursor.fetchall()
 result = mycursor.fetchone()
 
-for in result:
+for i in result:
     print(i)
 

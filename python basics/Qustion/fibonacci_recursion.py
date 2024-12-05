@@ -1,4 +1,4 @@
-def fibonacci_recursive(n: int): -> int
+def fibonacci_r(n: int): -> int
     if n<=1:
         return n
-    return fibonacci_recursive(n-1) + fibonacci_recursive(n-2)
+    return fibonacci_r(n-1) + fibonacci_r(n-2)

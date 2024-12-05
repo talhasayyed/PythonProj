@@ -1,3 +1,5 @@
+# https://medium.com/@dsrao0712/what-is-monkey-patching-and-why-is-it-used-a757a2bb7b4f
+
 # actual function
 def get_delivery_partners_by_pincode(data, headers, session: Session):
     """ Fetches delivery partner data from the external microservice """

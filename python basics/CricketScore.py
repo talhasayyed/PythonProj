@@ -3,7 +3,7 @@
 # library for url
 import requests
 
-r = requests.get("http://tattvasdayspa.com/talha/cricket.txt")
+r = requests.get("http://localhost/talha/cricket.txt")
 s = r.text
 # print("actual string is",s)
 

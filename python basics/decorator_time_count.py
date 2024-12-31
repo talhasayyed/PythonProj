@@ -1,25 +1,27 @@
 import time
 import logging
 
-logging.basicConfig(level=logging.INFO)
+# logging.basicConfig(level=logging.INFO)
 
-# decorator using @
-
+# Decorator using @
 def time_decorator(func):
     def wrapper(*args, **kwargs):
         start_time = time.time()
         result = func(*args, **kwargs)
         end_time = time.time()
-        execution_time = end_time-start_time
-        logging.info(f'Execution {func.__name__} in {execution_time} seconds')
+        execution_time = end_time - start_time
+        # logging.info(f'Execution of {func.__name__} took {execution_time:.2f} seconds')
+        print(f'Execution of {func.__name__} took {execution_time:.2f} seconds')
         return result
-    wrapper
-
+    return wrapper  # Missing return statement for the wrapper function
 
 @time_decorator
-def test(5)
-    # simulating function taking 5 Sec time
-    for i in range(5):
+def test(seconds):  # Parameter name must be valid; corrected to "seconds"
+    # Simulating function taking `seconds` time
+    for i in range(seconds):
         time.sleep(1)
-        # print(i)
-    result 'test run complete'
+    return 'Test run complete'  # Fixed result assignment and return statement
+
+# Example usage
+if __name__ == "__main__":
+    print(test(5))  # Corrected function call
